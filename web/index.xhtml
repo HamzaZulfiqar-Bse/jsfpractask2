@@ -23,6 +23,18 @@
 
 
       </h:form>
+      <table class="table table-stripped">
+         <tr>
+            <th>User Name</th>
+            <th>Password</th>
+         </tr>
+         <ui:repeat value="#{LoginBean.users}" var="usr">
+            <tr>
+               <td>usr.username</td>
+               <td>usr.password</td>
+            </tr>
+         </ui:repeat>
+      </table>
 
    </div>
 
